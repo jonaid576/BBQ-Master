@@ -1,0 +1,249 @@
+:root{
+    --orange: #f18119;
+    --lightBlack: #404040;
+    --white: #fff;
+    --gradient1: #ff713b;
+    --gradient2: #ffa51d;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* TYPO
+=========== */
+h1{
+    margin-top: 0;
+    font-size: 2.25rem;
+}
+
+h2{
+    font-size: 1.3125rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--lightBlack);
+}
+
+small{
+    font-size:0.625rem;
+    letter-spacing: 1px;
+}
+
+strong{
+    font-weight: 700;
+}
+
+
+/* CLASSES
+============== */
+/* INTRO-SECTION
+================ */
+
+.wrapper{
+    text-align: center;
+}
+
+.intro{
+    background-image: url(bbq.jpg);
+    min-height: 50vh;
+    background-color:#5b5b5b;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em 1em;
+    justify-content: space-between;
+}
+
+.intro * {
+    max-width: 400px;
+}
+
+.intro-top{
+    order: -1;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.intro-h1{
+    font-weight: 300;
+}
+
+.intro-top{
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 0.625rem;
+    border-top: var(--orange) 7px solid;
+    border-image: linear-gradient(to right, var(--gradient1), var(--gradient2)) 1;
+}
+
+.intro-h4{
+    color: var(--orange);
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+
+/* CONTENT SECTION
+====================  */
+
+.content{
+    padding: 2em 2em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content * {
+    max-width: 400px;
+}
+
+.content-h2{
+    margin-bottom: 0;
+
+}
+
+.content-register-p{
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.content-description-p{
+    margin-bottom: 2em;
+}
+.disclaimer{
+    line-height: .7;
+    max-width:200px;
+}
+
+/* INPUT - FORM */
+/* =============== */
+
+.form-registration{
+    max-width: 250px;
+}
+
+
+
+.form-input{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    padding: .5em .5em;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    transition: transform 250ms;
+}
+
+.form-input:focus{
+    transform: scale(1.1);
+}
+
+.btn{
+    width: 100%;
+    padding: .8em 1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: .8rem;
+    transition: all 250ms ease;
+}
+
+.btn-primary{
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, var(--gradient1), var(--gradient2) );
+    margin-bottom: 1em;
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+
+@media (min-width: 750px){
+
+    /* TYPO
+    ========= */
+
+    body{
+        font-size: 1.125rem;
+    }
+
+    h1{
+        font-size: 4.8rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+    small{
+        font-size: 0.625rem;            
+    }
+
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100%;
+      
+    }
+
+/* INTRO
+=========== */
+
+    .intro{
+        width: 60%;
+        justify-content: center;
+        
+    }
+
+    .intro-top{
+        position: absolute;
+        top: 0;
+    
+    }
+
+    .intro *{
+        max-width: 600px;
+    }
+
+    .intro-h4{
+        font-size: 2rem;
+        margin-top: 0;
+        word-spacing: 2px;
+    }
+
+
+/* CONTENT
+============ */
+
+    .content{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+}
