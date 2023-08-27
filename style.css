@@ -73,12 +73,12 @@ strong {
 }
 
 .intro {
-  background-image: url(bbq.jpg);
+  background-image: url(bbq_tiny.jpg);
   min-height: 50vh;
-  background-color: #5b5b5b;
+  background-color: rgba(0, 0, 0, 0.6);
   background-position: center;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: darken;
   color: white;
   display: flex;
   flex-direction: column;
